@@ -1,0 +1,45 @@
+/* --------------------- Created By InCoder --------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #ff5757;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100%;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    margin: 1rem;
+    cursor: pointer;
+    max-width: 18rem;
+    overflow: hidden;
+    max-height: 11rem;
+    border-radius: .5rem;
+}
+
+.image img{
+    max-width: 18rem;
+    transition: transform .3s ease-in-out;
+}
+
+.image:hover img{
+    transform: scale(1.1);
+}
