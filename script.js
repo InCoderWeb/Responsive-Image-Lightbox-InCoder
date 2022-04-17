@@ -13,9 +13,7 @@ currentImg = document.querySelector('.current')
 
 for (let i = 0; i < images.length; i++) {
     let newindex = i
-    let clickedImgIndex
     images[i].addEventListener('click', () => {
-        let clickedImgIndex = newindex
         function openPreview() {
             let imageURL = images[newindex].querySelector('img').src
             image.src = imageURL
